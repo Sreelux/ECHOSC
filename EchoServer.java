@@ -23,8 +23,9 @@ OutputStream ou=so.getOutputStream();
 PrintWriter pr=new PrintWriter(ou);
 BufferedReader buf=new BufferedReader(new
 InputStreamReader(in));
-             while(true) {
+while(true) {
 String str=buf.readLine();
+
 System.out.println(" Message Received From Client : " + str);
 System.out.println(" This Message is Forwarded To Client. ");
 pr.println(str);
